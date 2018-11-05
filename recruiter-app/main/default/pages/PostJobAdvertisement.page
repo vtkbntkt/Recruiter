@@ -1,0 +1,16 @@
+<apex:page standardController="Position__c" extensions="PostJobAdvertisementController" lightningStylesheets="true">
+    <apex:pageMessages />
+    <apex:form >
+        <apex:pageBlock >
+       
+            <apex:pageBlockButtons location="top">  
+                   
+                <apex:commandButton value="Post application on site" disabled="{!NOT(Position__c.Status__c== 'Open' && Position__c.Approval_Status__c='Approved' && Position__c.Posting_status__c='Not Posted')}" action="{!postApplicationOnSite}" id="postAppBtn"/>
+                <apex:commandButton value="Update application on site" disabled="{!NOT(Position__c.Status__c== 'Open' && Position__c.Posting_status__c='Posted')}" action="{!updateApplication}"/>
+                <apex:commandButton value="Remove application from site" disabled="{!NOT(Position__c.Status__c== 'Open' && Position__c.Posting_status__c='Posted')}" action="{!removeApplicationFromSite}"/>
+            </apex:pageBlockButtons>                        
+        </apex:pageBlock>      
+    </apex:form>
+    
+     
+</apex:page>

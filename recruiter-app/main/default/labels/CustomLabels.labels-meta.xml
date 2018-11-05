@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Exc_Dml</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Exc_Dml</shortDescription>
+        <value>Dml exception</value>
+    </labels>
+    <labels>
+        <fullName>Exc_ReplacePhoto</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Exc_ReplacePhoto</shortDescription>
+        <value>Impossible to replace the photo</value>
+    </labels>
+    <labels>
+        <fullName>Exc_SavePhoto</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Exc_SavePhoto</shortDescription>
+        <value>Impossible to save the photo</value>
+    </labels>
+    <labels>
+        <fullName>ImageBig</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImageBig</shortDescription>
+        <value>Image size too big</value>
+    </labels>
+    <labels>
+        <fullName>ImageInvalid</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImageInvalid</shortDescription>
+        <value>File is not image</value>
+    </labels>
+    <labels>
+        <fullName>ImageNull</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImageNull</shortDescription>
+        <value>No image</value>
+    </labels>
+    <labels>
+        <fullName>PostAdvStatusSuccess</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PostAdvStatusSuccess</shortDescription>
+        <value>The job advertisement was successfully posted on the site</value>
+    </labels>
+    <labels>
+        <fullName>RemoveAdvStatusSuccess</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RemoveAdvStatusSuccess</shortDescription>
+        <value>The application was successfully removed from the site</value>
+    </labels>
+    <labels>
+        <fullName>UpdateAdvStatusSuccess</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UpdateAdvStatusSuccess</shortDescription>
+        <value>The job advertisement was successfully updated on the site</value>
+    </labels>
+</CustomLabels>

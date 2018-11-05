@@ -1,0 +1,26 @@
+<apex:page standardController="Candidate__c" extensions="UploadCandidatePhotoController" lightningStylesheets="true">   
+    
+    
+    <apex:includeScript value="{! $Resource.jQuery }"/>
+    <apex:includeScript value="{!$Resource.preview_image_js}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.style_resources, 'styles_upload_photo.css')}"/>
+    <apex:messages />
+    <apex:form id="theForm">
+        <apex:pageBlock title="Upload photo" id="thePageBlock">
+            <apex:pageBlockButtons id="thePageBlockButtons" location="top">
+                <apex:outputLabel value="Select" for="uploadImageInput" styleClass="btn" />
+                <apex:commandButton value="Upload" action="{!uploadPhoto}" id="uploadButton" />
+            </apex:pageBlockButtons>              
+            <apex:pageBlockSection id="thePageBlockSection" columns="1">               
+                <div class="preview"></div>               
+                <apex:image url="/sfc/servlet.shepherd/version/download/{!photoFileId}"  rendered="{!if((photoFileId== ''),false,true)}" id="currentImage"/>
+                <apex:inputFile value="{!photo}" filename="{!photoName}" fileSize="{!photoSize}" contentType="{!photoContentType}" id="uploadImageInput"/>                          
+            </apex:pageBlockSection>           
+        </apex:pageBlock>      
+    </apex:form>   
+    <script>
+    var inputId = '{!$Component.theForm.thePageBlock.thePageBlockSection.uploadImageInput}';
+    var currentImageId = '{!$Component.theForm.thePageBlock.thePageBlockSection.currentImage}';
+    initPreview(inputId,currentImageId);   
+    </script>
+</apex:page>

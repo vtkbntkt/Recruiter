@@ -1,0 +1,31 @@
+<apex:page standardController="Candidate__c" lightningStylesheets="false" renderAs="pdf">
+<apex:stylesheet value="{!URLFOR($Resource.style_resources, 'styles.css')}"/>
+ <apex:pageBlock title="Candidate details" id="candidateDetails">
+ <div class="card">
+<apex:image url="/sfc/servlet.shepherd/version/download/{!Candidate__c.PhotoFileId__c}"  rendered="{!if((Candidate__c.PhotoFileId__c== ''),false,true)}" width="70%"/>
+        <apex:pageBlockSection title="Information" columns="1">
+            <apex:outputField value="{!Candidate__c.name}"/>        
+        </apex:pageBlockSection>         
+        <apex:pageBlockSection title="Contact Information" columns="1">
+            <apex:outputField value="{!Candidate__c.Legacy_Candidate_Number__c}"/> 
+             <apex:outputField value="{!Candidate__c.Street_Address_1__c}"/> 
+            <apex:outputField value="{!Candidate__c.First_Name__c}"/> 
+            <apex:outputField value="{!Candidate__c.Street_Address_2__c}"/>
+            <apex:outputField value="{!Candidate__c.Last_Name__c}"/>
+            <apex:outputField value="{!Candidate__c.City__c}"/>
+            <apex:outputField value="{!Candidate__c.Email__c}"/>
+            <apex:outputField value="{!Candidate__c.State_Province__c}"/>
+            <apex:outputField value="{!Candidate__c.Mobile__c}"/>
+            <apex:outputField value="{!Candidate__c.Zip_Postal_Code__c}"/>
+            <apex:outputField value="{!Candidate__c.Phone__c}"/>           
+            <apex:outputField value="{!Candidate__c.Country__c}"/>      
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Experience & Education" columns="1">
+            <apex:outputField value="{!Candidate__c.Currently_Employed__c}"/> 
+             <apex:outputField value="{!Candidate__c.Education__c}"/> 
+            <apex:outputField value="{!Candidate__c.Current_Employer__c}"/> 
+            <apex:outputField value="{!Candidate__c.Years_of_Experience__c}"/>    
+        </apex:pageBlockSection>
+            </div>
+        </apex:pageBlock>
+</apex:page>

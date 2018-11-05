@@ -1,0 +1,10 @@
+{"Id":"a000E000005tzKZQAY",
+"Description__c":"Description",
+"Education__c":"Master of Science",
+"Email__c":"amail@gmail.com",
+"Location__c":{"latitude":2.856998,"longitude":-2.365898},
+"Manager_name__c":"Alina","Phone__c":"+11111111",
+"Salary__c":5000,
+"Skills_Required__c":"XML",
+"Status__c":"Active",
+"Name":"Developer"}
